@@ -1,8 +1,8 @@
 # js-parent
 
-This is a set of functions for getting javascript object data. The motivation for creating this recursive series rised from the hard work around the reading from a deep target node setted into an erratic page payload object.
+Take a dummy component named MYCOMP whose data needs to be readed into a function. This component is embedded in a page, whose many other sibling and nested ones changes its location according to dragging or manual layout editing. Thus, MYCOMP before setted in items.bodyData.blocks[4].componentBody.MYCOMP could now be into items.another.node[2].into.some.deep[122]. ].place.MYCMP; so we can't rely on the path to the component.
 
-Take a dummy component named MYCOMP whose data needs to be readed into a function. This component is embedded in a page, whose many other sibling and nested ones changes its location according to dragging or manual layout editing. Thus, MYCOMP before setted in items.bodyData.blocks[4].componentBody.MYCOMP could now be into items.another.node[2].into.some.deep[122]. ].place.MYCMP.
+This set of functions were made to manage this sort of problem, getting the right javascript object data. The motivation for creating this recursive series rised from the hard work around the reading from a deep target node setted into an erratic page payload object.
 
 The six functions below were made to handle this issue:
 
